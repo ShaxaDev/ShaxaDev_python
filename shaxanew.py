@@ -198,7 +198,8 @@ def rasm2(message):
         image=Image.open('sert_2.jpg')
         draw=ImageDraw.Draw(image)
         
-        (300,300),t,font=font1,fill="black",
+        font1=(300,300)
+        fill="black"
         draw.text(p,t,'black',font1)
         image.save('user.jpg')
         qr=open('user.jpg','rb')
@@ -215,8 +216,8 @@ def rasm(message):
     if len(s)==2:
         image=Image.open('sert_!.jpg')
         draw=ImageDraw.Draw(image)
-        (300,300),t,font=font1,fill="black"
-        p=300,300
+        fill="black"
+        font1=(300,300)
         draw.text(p,t,'black',font1)
         image.save('user.jpg')
         qr=open('user.jpg','rb')
