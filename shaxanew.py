@@ -200,7 +200,7 @@ def rasm2(message):
         
         font1=300,300
         fill="black"
-        font2=ImageFont.truetype('arial.ttf',50)
+        font2=ImageFont.truetype(50)
         draw.text(font1,t,fill,font=font2)
         image.save('user.jpg')
         qr=open('user.jpg','rb')
@@ -217,7 +217,7 @@ def rasm(message):
     if len(s)==2:
         image=Image.open('sert_!.jpg')
         draw=ImageDraw.Draw(image)
-        font2=ImageFont.truetype('arial.ttf',50)
+        font2=ImageFont.truetype(50)
         
         fill="black"
         font1=300,300
