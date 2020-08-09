@@ -194,7 +194,7 @@ def rasm2(message):
     t=message.text
     image=Image.open('sert_2.jpg')
     draw=ImageDraw.Draw(image)
-    font1=ImageFont.truetype('arial.ttf',50)
+    font1=ImageFont.truetype('Marlboro.ttf',50)
     s=t.split()
     if len(s)==2: 
         p=300,300
