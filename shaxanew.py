@@ -198,9 +198,9 @@ def rasm2(message):
         image=Image.open('sert_2.jpg')
         draw=ImageDraw.Draw(image)
         
-        font1=(300,300)
+        font1=300,300
         fill="black"
-        draw.text(p,t,'black',font1)
+        draw.text(font1,t,fill)
         image.save('user.jpg')
         qr=open('user.jpg','rb')
         bot.send_photo(message.chat.id,qr)
@@ -217,8 +217,8 @@ def rasm(message):
         image=Image.open('sert_!.jpg')
         draw=ImageDraw.Draw(image)
         fill="black"
-        font1=(300,300)
-        draw.text(p,t,'black',font1)
+        font1=300,300
+        draw.text(font1,t,fill)
         image.save('user.jpg')
         qr=open('user.jpg','rb')
         bot.send_photo(message.chat.id,qr)
