@@ -161,7 +161,7 @@ def callback_query(call):
             bot.register_next_step_handler(send,rasm2)
             q.clear()
         elif 9<=len(q)<=10:
-            send = bot.edit_message_text(chat_id=call.message.chat.id,message_id=call.message.message_id,text='*Siz {} ta to\'g\'ri yechdingiz Ism familyangizni to\'liq kiriting  serifikatga yoziladi aks holda sertifikat berilmaydi\nP.S:orada probel bilan m.s:Salimov Anvar*'.format(len(q)),parse_mode='markdown')
+            send = bot.edit_message_text(chat_id=call.message.chat.id,message_id=call.message.message_id,texat='*Siz {} ta to\'g\'ri yechdingiz Ism familyangizni to\'liq kiriting  serifikatga yoziladi aks holda sertifikat berilmaydi\nP.S:orada probel bilan m.s:Salimov Anvar*'.format(len(q)),parse_mode='markdown')
             bot.register_next_step_handler(send,rasm)
             q.clear()
 
