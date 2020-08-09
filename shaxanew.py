@@ -192,11 +192,12 @@ def callback_query(call):
 #sert_berish qismi        
 def rasm2(message):
     t=message.text
-    image=Image.open('sert_2.jpg')
-    draw=ImageDraw.Draw(image)
-    font1=ImageFont.truetype('arial.ttf',50)
+   
     s=t.split()
     if len(s)==2: 
+        image=Image.open('sert_2.jpg')
+        draw=ImageDraw.Draw(image)
+        font1=ImageFont.truetype('arial.ttf',50)
         p=300,300
         draw.text(p,t,'black',font1)
         image.save('user.jpg')
@@ -209,11 +210,12 @@ def rasm2(message):
 def rasm(message):
     
     t=message.text
-    image=Image.open('sert_!.jpg')
-    draw=ImageDraw.Draw(image)
-    font1=ImageFont.truetype('arial.ttf',50)
+   
     s=t.split()
-    if len(s)==2: 
+    if len(s)==2:
+        image=Image.open('sert_!.jpg')
+        draw=ImageDraw.Draw(image)
+        font1=ImageFont.truetype('arial.ttf',50)
         p=300,300
         draw.text(p,t,'black',font1)
         image.save('user.jpg')
