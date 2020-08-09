@@ -200,7 +200,7 @@ def rasm2(message):
         
         font1=300,300
         fill="black"
-        font2=ImageFont.truetype(50)
+        
         draw.text(font1,t,fill,font=font2)
         image.save('user.jpg')
         qr=open('user.jpg','rb')
@@ -221,7 +221,7 @@ def rasm(message):
         
         fill="black"
         font1=300,300
-        draw.text(font1,t,fill,font=font2)
+        draw.text(font1,t,fill)
         image.save('user.jpg')
         qr=open('user.jpg','rb')
         bot.send_photo(message.chat.id,qr)
