@@ -7,7 +7,7 @@ import os
 token = os.environ.get("tg", "1295627886:AAGiIsh8so7HMAPQef6rOxmm4ITkJleTfoU")
 
 bot = telebot.TeleBot(token)
-start_text = '*Assalom {} xush kelibsiz \nushbu bot @PythonTestUz jamoasinig rasmiy boti.\nBu bot orqali python dasturlash tilidan \nnazariy va videodarslarni olishingiz mumkin*'
+start_text = '*Assalom {} xush kelibsiz \nushbu bot @PythonTestUz jamoasinig rasmiy boti.\nBu bot orqali python dasturlash tilidan \nnazariy,videodarslarni olishingiz va qo\'shimcha tarzda /test command orqali bilimingizni sinab\nCERTIFICATE ni qo\'lga kiriting*'
 #txt='hali men toliq ishga tushmadim savolingizni ushbu guruhda qoldiring'
 w=[]
 @bot.message_handler(commands=["test"])
