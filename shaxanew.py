@@ -3,8 +3,9 @@ from telebot import types
 from baza import *
 from keyboard import *
 from  PIL import Image,ImageDraw,ImageFont
+import os
+token = os.environ.get("tg", "1295627886:AAGiIsh8so7HMAPQef6rOxmm4ITkJleTfoU")
 
-token = '1295627886:AAGiIsh8so7HMAPQef6rOxmm4ITkJleTfoU'
 bot = telebot.TeleBot(token)
 start_text = '*Assalom {} xush kelibsiz \nushbu bot @PythonTestUz jamoasinig rasmiy boti.\nBu bot orqali python dasturlash tilidan \nnazariy va videodarslarni olishingiz mumkin*'
 #txt='hali men toliq ishga tushmadim savolingizni ushbu guruhda qoldiring'
