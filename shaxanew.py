@@ -391,7 +391,7 @@ def text(message):
 
 
     if '⬅️orqaga'==message.text:
-        bot.send_message(message.chat.id,start_text.format(message.from_user.first_name), reply_markup=mark)
+        bot.send_message(message.chat.id,start_text.format(message.from_user.first_name), reply_markup=mark,parse_mode='markdown')
     
     
 
