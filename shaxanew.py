@@ -279,6 +279,13 @@ def text(message):
     if 'raxmat'==message.text:
         bot.send_message(message.chat.id,'arzimaydi bizni kuzatib boring')
     if 'Telegram bot yasash🤖'==message.text:
+        q=types.ReplyKeyboardMarkup(row_width=2)
+        q1=types.KeyboardButton('1-qism')
+        q2=types.KeyboardButton('2-qism')
+        q3=types.KeyboardButton('3-qism')
+        q4=types.KeyboardButton('Serverga qo\'yish')
+        q5=types.KeyboardButton('⬅️back')
+        q.add(q1,q2,q3,q4,q5)
         bot.send_message(message.chat.id,'Python dasturlash tilida telegram bot yashash darslariga xush kelibsiz!',reply_markup=q)
     if '1-qism'==message.text:
         bot.reply_to(message,'https://youtu.be/FYuDyGkKVm8')
