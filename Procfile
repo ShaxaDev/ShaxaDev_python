@@ -1,1 +1,1 @@
-worker: python shaxanew.py
+worker: python3 shaxanew.py
