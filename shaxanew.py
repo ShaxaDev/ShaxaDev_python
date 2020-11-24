@@ -7,7 +7,7 @@ import os
 token = '1379080434:AAGlczOYVdhX0pE_FyLxaLF0ruMu2Pl3wsY'
 
 bot = telebot.TeleBot(token)
-start_text = '*Assalom {} xush kelibsiz \nushbu bot @PythonTestUz jamoasinig rasmiy boti.\nBu bot orqali python dasturlash tilidan \nnazariy,videodarslarni olishingiz va qo\'shimcha tarzda /test command orqali bilimingizni sinab\nCERTIFICATE ni qo\'lga kiriting*'
+start_text = '*Assalomu alaykum {} xush kelibsiz \nushbu bot @PythonTestUz jamoasinig rasmiy boti.\nBu bot orqali python dasturlash tilidan \nnazariy,videodarslarni olishingiz va qo\'shimcha tarzda /test command orqali bilimingizni sinab\nCERTIFICATE ni qo\'lga kiriting*'
 #txt='hali men toliq ishga tushmadim savolingizni ushbu guruhda qoldiring'
 w=[]
 @bot.message_handler(commands=["test"])
@@ -388,7 +388,7 @@ def text(message):
     if 'Python coder👨‍💻'==message.text: 
 
        a=types.InlineKeyboardMarkup()
-       d=types.InlineKeyboardButton(text='bu yerni bosing',url='t.me/great_pythonist')
+       d=types.InlineKeyboardButton(text='bu yerni bosing',url='t.me/ShaxaDev')
        a.add(d)
        bot.send_message(message.chat.id,'python dasturchisi bilan bog\'lanish',reply_markup=a)   
 
