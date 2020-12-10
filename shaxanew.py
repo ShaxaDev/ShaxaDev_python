@@ -4,7 +4,7 @@ from baza import *
 from keyboard import *
 from  PIL import Image,ImageDraw,ImageFont
 import os
-token = '1456077275:AAHY6gJJjVIl0wRjLGYKT8LIs487ZL85wkA'
+token = '1379080434:AAGlczOYVdhX0pE_FyLxaLF0ruMu2Pl3wsY'
 
 bot = telebot.TeleBot(token)
 start_text = '*Assalomu alaykum {} xush kelibsiz \nushbu bot @PythonTestUz jamoasinig rasmiy boti.\nBu bot orqali python dasturlash tilidan \nnazariy,videodarslarni olishingiz va qo\'shimcha tarzda /test command orqali bilimingizni sinab\nCERTIFICATE ni qo\'lga kiriting*'
